@@ -4,11 +4,11 @@ This is a book website which help user to add review about books they read, and 
 It's also provide API to help other developers get data about specific book and use it inside their application.
 
 # Technologies:
-1- python 3.6
-2- Flask 1.1.1
-3- werkzeug 0.16.0
-4- Bootstrap 4
-5- HTML & CSS
+1. python 3.6
+2. Flask 1.1.1
+3. werkzeug 0.16.0
+4. Bootstrap 4
+5. HTML & CSS
 
 # Description of project in details:
 - This project has main page where you can **register** or **login**.
