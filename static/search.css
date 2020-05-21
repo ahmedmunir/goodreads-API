@@ -1,0 +1,53 @@
+body {
+    background-color: #FEF4E7;
+    margin-top: 100px;
+}
+
+
+.alert-message-login {
+    width: 70%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #4DAE51;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.alert-message-error {
+    width: 70%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(224, 55, 13);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+
+.search-header {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    color: grey;
+    text-align: center;
+}
+
+.form {
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.input {
+    display: block;
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: white;
+    outline: none;
+}

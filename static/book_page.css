@@ -1,0 +1,46 @@
+body {
+    background-color: #FEF4E7;
+    color: rgb(109, 106, 106);
+    margin-top: 100px;
+}
+
+
+.book-details,
+.goodreads-ratings,
+.reviews,
+.add-review {
+    width:fit-content;
+    padding: 10px;
+    border-bottom: 0.5px solid grey;
+}
+
+.my-rating {
+    margin-bottom: 20px;
+}
+
+.add-review-button {
+    padding: 10px;
+    border-radius: 10px;
+    border: solid grey 0.5px;
+    background: #F8E2AA;
+    outline: none;
+}
+
+.alert-message-red,
+.alert-message-green {
+    width: 70%;
+    margin:auto;
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.alert-message-red {
+    background-color: #CD5C5c;
+}
+
+.alert-message-green {
+    background-color: #4DAE51;
+}

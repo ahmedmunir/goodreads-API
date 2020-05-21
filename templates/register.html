@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='register.css')}}">
+    <title>Register - Book API</title>
+</head>
+<body>
+    {% with message = get_flashed_messages() %}
+        {% if message %}
+            <p class="alert-message" role="alert">{{message[0]}}</p>
+        {% endif %}
+    {% endwith %}
+    <h1 class="header">Add new account</h1>
+    <form class="form" action="{{url_for('register')}}" method="POST">
+        <label for="name"><strong>username</strong></label>
+        <input id ="name" type="text" name="username" placeholder="Enter username" required>
+        <label for="password"><strong>password</strong></label>
+        <input id="password" type="password" name="password" placeholder ="Enter your password" required>
+        <button type="submit">register</button>
+    </form>
+</body>
+</html>

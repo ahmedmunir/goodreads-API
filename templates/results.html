@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='results.css')}}">
+    <title>results</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-light bg-light d-flex justify-content-end">
+        <form class="form-inline my-2 my-lg-0" action="{{url_for('logout')}}" method="GET">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Logout</button>
+          </form>
+    </nav>
+    <h1 class='results-header'>Results</h1>
+    <table class='results-table'>
+        <thead>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Year of Publish</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in results%}
+                <tr>
+                    <td><a href="{{url_for('search_book', isbn=result.isbn)}}" class="linker">{{result.isbn}}</a></td>
+                    <td><a href="{{url_for('search_book', isbn=result.isbn)}}" class="linker">{{result.title}}</a></td>
+                    <td><a href="{{url_for('search_book', isbn=result.isbn)}}" class="linker">{{result.author}}</a></td>
+                    <td><a href="{{url_for('search_book', isbn=result.isbn)}}" class="linker">{{result.year}}</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>
