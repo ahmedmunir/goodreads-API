@@ -1,6 +1,5 @@
-# CS50 Web programming using Python and Javascript Course (Project 1).
-
-# Books Project 1
+# Books API Project:
+This is [CS50's Web programming with Python and Javascript](https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript) project1 - 2018 version.  
 
 This is a book website which help user to add review about books they read, and read the views added by other readers.
 It's also provide API to help other developers get data about specific book and use it inside their application.

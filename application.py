@@ -277,3 +277,6 @@ def api(isbn):
         })
     except:
         return "Wrong isbn number", 404
+
+if __name__=="__main__":
+    app.run()
