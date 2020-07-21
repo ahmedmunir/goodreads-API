@@ -26,7 +26,7 @@ It also provides **API** to help other developers get data about specific book a
 # Installation:
 The app depends on 2 sources to get information about books:  
 - **books.csv** which has information about 5000 book, so you need to install data from that books.csv into database to be able to search for books.
-- **goodreads** API which used to get some additional information about book that found at **books.csv**.  
+- [**goodreads API**](https://www.goodreads.com/api) which used to get some additional information about book that found at **books.csv**.  
 
 Get the URL of your database then run:
 ```bash
