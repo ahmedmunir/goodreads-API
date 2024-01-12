@@ -35,7 +35,3 @@ pip install -r requirements.txt
 python import.py #to create tables at Database and insert book.csv data into it
 python application.py #to run application locally at: http://localhost:8000
 ```
-
-# Website Link:
-Enjoy reading:  
-https://book-reviewer-postgres-databas.herokuapp.com/
